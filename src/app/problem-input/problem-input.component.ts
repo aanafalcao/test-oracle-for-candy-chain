@@ -29,6 +29,7 @@ export class ProblemInputComponent implements OnInit {
     this.hasOutput = false;
   }
 
+  // done by galopes
   isString(strAux: string):boolean{
     for(var i = 0; i < strAux.length; i++){
       if(strAux[i] < 'a' || strAux[i] > 'z'){
@@ -46,7 +47,7 @@ export class ProblemInputComponent implements OnInit {
     }
     return true
   }
-
+  ///////////
   submit():void{
 
     var t: TestCase = {
@@ -58,6 +59,8 @@ export class ProblemInputComponent implements OnInit {
 
     this.haserror = false;
     this.hasOutput = false;
+
+    // done by galopes
     if(input_array.length > 2){
       //check size of first chain
       if(input_array[0].length > 100){
@@ -168,6 +171,7 @@ export class ProblemInputComponent implements OnInit {
       this.haserror = true;
       this.errorMessage = "Input is invalid!";
     }
+    ///////////
     
     console.log("Error: " + error)
 
