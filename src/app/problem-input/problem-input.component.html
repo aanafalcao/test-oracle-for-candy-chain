@@ -1,0 +1,29 @@
+<div class="form-group">
+  <label for="input">Submit your Input:</label>
+  <!--<textarea class="form-control" rows="5" id="input" ></textarea>-->
+
+  <!--<input class= "form-control input" [(ngModel)]="inputString" >-->
+  <textarea [(ngModel)]="inputString" class="form-control" rows="5"></textarea>
+  <br>
+  <button type="submit" class="btn-sm btn-primary btn-submit" (click)="submit()">Submit</button>
+  <p></p>
+  <div class="alert alert-danger" role="alert" *ngIf="haserror">
+     <strong>Input Error:</strong> {{errorMessage}}
+  </div>
+  <div class="alert alert-warning" role="alert" *ngIf="connecting">
+     Connecting to server
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="cantconnect">
+     Error connecting to Server!
+  </div>
+
+
+  <div *ngIf="hasOutput">
+  	Output: <br>
+  	<div class="output">
+  		{{output}}
+  	</div>
+  </div>
+
+
+</div>

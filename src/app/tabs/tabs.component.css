@@ -1,0 +1,13 @@
+.active{
+	background-color:  #fff  !important;
+	border-radius: .05rem !important;
+	color: #42A5F5  !important;
+}
+.nav-link{
+	background-color: #42A5F5;
+	color: #fff;
+}
+.tab-body{
+	min-height: 360px;
+	overflow: auto;
+}
